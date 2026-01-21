@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 120px 40px 80px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+.hero h1 {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin-bottom: 16px;
+    line-height: 1.1;
+}
+
+.subtitle {
+    font-size: 1.125rem;
+    color: #000000;
+    margin-bottom: 24px;
+    font-weight: 400;
+}
+
+.linkedin-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.linkedin-icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    vertical-align: middle;
+}
+
+.linkedin-text {
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 1px;
+    line-height: 1;
+    transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.linkedin-link:hover .linkedin-text {
+    border-bottom-color: #666666;
+    color: #666666;
+}
+
+/* Sections */
+.section {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 60px;
+    margin-bottom: 80px;
+}
+
+.section-label {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #000000;
+    padding-top: 4px;
+}
+
+.section-content {
+    max-width: 600px;
+}
+
+/* Entries */
+.entry {
+    margin-bottom: 48px;
+}
+
+.entry:last-child {
+    margin-bottom: 0;
+}
+
+.entry h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+    line-height: 1.4;
+}
+
+.role {
+    font-size: 0.9375rem;
+    color: #666666;
+    margin-bottom: 12px;
+}
+
+.description {
+    font-size: 1rem;
+    color: #000000;
+    line-height: 1.7;
+}
+
+/* Skills */
+.skills-list {
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* CV Button */
+.cv-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #f5f5f5;
+    color: #000000;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.cv-button:hover {
+    background-color: #e8e8e8;
+}
+
+/* Footer */
+footer {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #e5e5e5;
+    font-size: 0.875rem;
+    color: #666666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    main {
+        padding: 80px 24px 60px;
+    }
+
+    .hero {
+        margin-bottom: 80px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .section {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        margin-bottom: 60px;
+    }
+
+    .section-label {
+        font-size: 0.875rem;
+        color: #666666;
+    }
+
+    .section-content {
+        max-width: 100%;
+    }
+
+    .entry {
+        margin-bottom: 36px;
+    }
+
+    footer {
+        padding: 32px 24px;
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 60px 20px 40px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+}
