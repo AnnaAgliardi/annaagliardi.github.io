@@ -44,7 +44,15 @@ main {
     font-weight: 400;
 }
 
-.linkedin-link {
+.hero-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.hero-link {
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -54,21 +62,21 @@ main {
     font-weight: 400;
 }
 
-.linkedin-icon {
+.hero-link-icon {
     width: 24px;
     height: 24px;
     flex-shrink: 0;
     vertical-align: middle;
 }
 
-.linkedin-text {
+.hero-link-text {
     border-bottom: 1px solid #cccccc;
     padding-bottom: 1px;
     line-height: 1;
     transition: border-color 0.2s ease, color 0.2s ease;
 }
 
-.linkedin-link:hover .linkedin-text {
+.hero-link:hover .hero-link-text {
     border-bottom-color: #666666;
     color: #666666;
 }
